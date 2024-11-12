@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    width: 100%;
+
+}
+
+.wrapper{
+    width: 60%;
+    margin: auto; 
+}
+
+/* end */
+
+
+/* button group */
+.btn-group, .btn{
+    font-weight: 600;
+    cursor: pointer;
+}
+/* end */
+
+.discount p{
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    padding: 0.5rem 0;
+}
+
+/* end */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:2.5rem 0;
+    gap:6rem;
+}
+
+.navbar>div{
+    display: flex;
+}
+
+.navbar-logo{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-links{
+    display: flex;
+    gap:1.7rem;
+}
+
+.navbar-icons{
+    display: flex;
+    gap:0.7rem;
+}
+
+/* end */
+
+header{
+    display: flex;
+    justify-content: space-around;
+    
+  
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    
+    margin: auto 0;
+    
+
+    padding:4rem 2rem;
+    margin-top: 15rem;
+
+    width: 100%;
+    background-color: rgb(166, 245, 220);
+
+    gap:1rem;
+}
+
+.header-content .sub-title{
+    width: 50%;
+}
+
+.header-content .sub-title h2{
+    font-size: 35pt;
+    font-weight: 500;
+    margin-bottom: 1.4rem;
+}
+
+.header-content .btn a{
+    padding: 0.5rem 2rem;
+    background-color: #010101;
+    color: #eee;
+    border: 3px solid #010101; 
+    transition: all 0.5s;
+}
+
+.header-content .btn a:hover{
+    background-color: transparent;
+    color: #010101;  
+    border: 3px solid #010101; 
+    cursor: pointer; 
+}
+
+
+.header-image{
+    position: relative;
+}
+
+.header-image img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 600px;
+
+    transform: scaleX(-1);
+}
+
+/* end */
+
+.collection{
+    display: flex;
+    justify-content: flex-start;
+    gap:2rem;
+}
+
+.collection-content{
+    margin: auto 0;
+    padding-left: 2rem;
+
+}
+
+.collection-content .title{
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+}
+
+.collection-content .title h2{
+    font-size: 28pt;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.collection-content .title h2::after{
+    content: "";
+    position: absolute;
+    width:50%;
+    transform: translateX(50%);
+    background-color: black;
+    bottom:-8px;
+    left:0;
+    height: 3px;
+    border-radius: 100%;
+
+}
+
+.collection-content .title p{
+    margin-bottom: 0.5rem;
+}
+
+.collection-content .title h3{
+    margin-bottom: 2.3rem;
+}
+
+.collection-content .btn a{
+    padding: 0.5rem 2rem;
+    background-color: white;
+    color: #010101;
+    border: 3px solid #010101; 
+    transition: all 0.5s;
+}
+
+.collection-content .btn a:hover{
+    border: 3px solid #010101; 
+    background-color: #010101;
+    color: #fff;
+    cursor: pointer;
+}
+
+.collection-image{
+    margin-top: 6rem;
+    
+}
+
+.collection-image img{
+    height: 450px;
+}
+
+/* end */
+
+
+.title-group{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.onsale .card-group{
+    display: flex;
+    gap:2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.onsale .card-group .card{
+    position: relative;
+}
+
+.onsale .card-group .card .h3{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+   
+    width: 200px;
+    color:#eee;
+}
+
+.onsale .card-group .card .h3 .mb{
+    margin-bottom: 2rem;
+}
+
+
+.onsale .card-group .card img{
+    width: 270px;
+}
+
+.onsale .btn-group{
+    border: 3px solid black;
+    background-color: black;
+    padding: 0.7rem;
+    transition: all 0.6s;
+}
+
+.onsale .btn-group:hover{
+    background-color: #eee;
+    border: 3px solid #eee;
+    color: black;
+}
+/* end */
+
+.musthave .features{
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+}
+
+.musthave .card-group{
+    display: flex;
+    gap:2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+    padding: 0 0.5rem;
+    text-align: left;
+}
+
+.musthave img{
+    width: 250px;
+}
+
+.musthave .card h4{
+    margin:0.5rem 0;
+}
+
+
+.latest-news{
+    margin-bottom: 2rem;
+}
+
+
+.latest-news .card-group{
+    display:flex;
+    text-align: center;
+    gap:2rem;
+    flex-wrap: wrap;
+}
+
+.latest-news .card{
+    width: 30%;
+    margin: auto;
+}
+
+.latest-news img{
+    width: 100%;
+}
+
+
+.latest-news .card .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.7rem  0;
+    gap:0.2rem;
+}
+
+.latest-news .card .title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: aliceblue;
+    gap:1rem;
+    margin-top: 1.5rem;
+    padding: 2rem 0;
+}
+
+.latest-news .card .title h4{
+    position: relative;
+}
+
+.latest-news .card .title h4::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+    bottom: -18px;
+    left:0;
+}
+
+
+
+.latest-news .card .heading span{
+    background-color: #010101;
+    width: 7px;
+    height: 7px;
+    margin: 0 0px;
+    border-radius: 100%;
+}
+
+.latest-news .title h4{
+    font-size: 13pt;
+    font-weight: 600;
+}   
+
+.latest-news .title p{
+    margin-top: 2rem;
+    font-size: 10pt;
+}
+
+/* end */
+
+.brands{
+    margin-top: 2rem;
+    padding: 5rem 0;
+    width: 100%;
+    margin:auto;
+    background-color: #eee;
+}
+
+.brands .images{
+    margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+}
+
+.brands .images img{
+    filter:contrast(0.5);
+
+    width: 100px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+   
+}
+
+.brands .images img:hover{
+    filter:contrast(1);
+    transform: scale(1.05);
+}
+
+
+/* end */
+
+/* title group */
+.title-group h2{
+    display:inline-flex;
+    color: black;
+    text-align: center;
+    margin-top: 8rem;
+    font-size: 28pt;
+    font-weight: 500;
+    position: relative;
+}
+
+.title-group h2::after{
+    content: "";
+    position: absolute;
+    width:100%;
+    background-color: black;
+    bottom:-8px;
+    left:0;
+    height: 3px;
+    border-radius: 100%;
+}
+
+/* end */
+
+
+
+
+
+
+
+
+
+
+/* media query */
+@media screen and (max-width: 1366px){
+    .wrapper{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .navbar .navbar-links{
+        display: none;
+    }
+
+    .brands .images{
+        gap:1rem;
+    }
+
+    .brands .images img{
+        width: 50px;
+        
+       
+    }
+}
+
+
+
+
+@media screen and (max-width: 630px){
+    .header-content{
+        margin-top: 2rem;
+    }
+
+    .header-image img{
+        height: 400px;
+    }
+
+    .collection{
+        padding-top: 2rem;
+        padding-right:3rem;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        gap:0;
+    }
+
+    .collection-image {
+        margin-top: 3rem;
+        padding-left:2.5rem;
+    }
+
+    .collection-image img{
+        height: 300px;
+    }
+
+    .latest-news .card-group{
+       
+        flex-direction: column;
+        gap:5rem;
+    }
+    
+    .latest-news .card{
+        width: 100%;
+    }
+
+    .navbar-logo h2{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 476px){
+
+    .navbar{
+        flex-direction: column;
+        gap:2rem;
+    }
+
+    .navbar-logo h2{
+        font-size: 35pt;
+    }
+
+    .navbar-icons{
+        gap:1.5rem;
+    }
+
+    .latest-news .card-group{
+        width: 90%;
+        margin: auto;
+    }
+
+    .brands .images{
+        place-items: center;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: auto;
+    }
+
+    .brands .images img{
+        width: 60%;
+    }
+}
+
+
